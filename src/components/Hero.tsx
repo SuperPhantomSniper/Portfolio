@@ -81,7 +81,7 @@ const Hero: React.FC = () => {
                 <div className="w-64 h-64 sm:w-80 sm:h-80 bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 rounded-full flex items-center justify-center p-1">
                   <div className="w-full h-full bg-slate-50 dark:bg-slate-900 rounded-full flex items-center justify-center overflow-hidden">
                     <img 
-                      src="@/src/profile.jpg" 
+                      src="https://crimson-genetic-crane-992.mypinata.cloud/ipfs/bafybeiaqnoovzyu4547cnd6xoru3donnyzhnghufawcexldoky6hlmkaie/juri.jpg" 
                       alt="Juri Miyazawa"
                       className="w-full h-full object-cover rounded-full"
                     />
