@@ -49,8 +49,19 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#home" className="font-bold text-xl text-blue-600 dark:text-blue-400">
-              Juri<span className="text-orange-500">.dev</span>
+            <a href="#home" className="group relative flex items-center space-x-2">
+              <div className="relative">
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-orange-500 rounded-full blur opacity-70 group-hover:opacity-100 transition duration-300"></div>
+                <div className="relative w-8 h-8 bg-white dark:bg-slate-900 rounded-full flex items-center justify-center ring-1 ring-slate-200/20">
+                  <span className="text-lg font-bold bg-gradient-to-r from-blue-600 to-orange-500 bg-clip-text text-transparent">J</span>
+                </div>
+              </div>
+              <div className="flex items-center">
+                <span className="text-xl font-bold text-slate-800 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
+                  Juri
+                </span>
+                <span className="text-xl font-bold text-orange-500 group-hover:text-orange-400 transition-colors duration-300">.dev</span>
+              </div>
             </a>
           </div>
           
@@ -106,8 +117,19 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
       {/* Mobile menu */}
       <div className={`${isMenuOpen ? 'fixed' : 'hidden'} top-0 left-0 w-full h-full bg-white dark:bg-slate-900 z-50 overflow-auto`}>
         <div className="flex items-center justify-between p-4 border-b dark:border-slate-700">
-          <a href="#home" className="font-bold text-xl text-blue-600 dark:text-blue-400">
-            Juri<span className="text-orange-500">.dev</span>
+          <a href="#home" className="group relative flex items-center space-x-2">
+            <div className="relative">
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-orange-500 rounded-full blur opacity-70 group-hover:opacity-100 transition duration-300"></div>
+              <div className="relative w-8 h-8 bg-white dark:bg-slate-900 rounded-full flex items-center justify-center ring-1 ring-slate-200/20">
+                <span className="text-lg font-bold bg-gradient-to-r from-blue-600 to-orange-500 bg-clip-text text-transparent">J</span>
+              </div>
+            </div>
+            <div className="flex items-center">
+              <span className="text-xl font-bold text-slate-800 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
+                Juri
+              </span>
+              <span className="text-xl font-bold text-orange-500 group-hover:text-orange-400 transition-colors duration-300">.dev</span>
+            </div>
           </a>
           <button
             onClick={() => setIsMenuOpen(false)}
